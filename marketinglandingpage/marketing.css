@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: gray;
+    background-color: white;
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
@@ -94,12 +94,29 @@ h1 {
 
 .main-leftside {
     grid-area: leftside;
-    background-color: rgba(25, 24, 24, 0.9); 
+    background-color: rgba(25, 24, 24, 0.92); 
     padding-top: 1rem!important;
     padding-bottom: 2rem!important;
     padding: 2rem;
     color: white;
 
+}
+.main-leftside .skyblue {
+    margin-right: 0.5rem;
+}
+
+.skyblue {
+    border-color: white;
+}
+.skyblue:hover {
+    background-color: rgb(172, 250, 224);
+}
+.skyblue:active {
+    background-color: aqua;
+}
+
+.transparent:hover {
+    background-color: rgba(246, 120, 98, 0.9);
 }
 
 .main-leftside h2 {
@@ -108,7 +125,7 @@ h1 {
 }
 .main-leftside p {
     font-size: 1.1rem;
-    /* color: white; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn {
@@ -117,7 +134,7 @@ h1 {
     border-radius: 1rem;
 }
 
-.green {
+.skyblue {
     background-color: aqua;
 }
 
@@ -125,4 +142,21 @@ h1 {
     grid-area: rightside;
     background-color: rgba(252, 102, 75, 0.9);
     padding: 2rem;
+}
+
+.aside-rightside p {
+    font-size: 1.2rem;
+}
+.reg-t {
+    color: white;
+}
+
+.aside-rightside input {
+    width: 18rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.reg {
+    margin-top: 1.3rem;
 }
