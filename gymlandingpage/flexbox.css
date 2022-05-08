@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.container {
+    max-width: 75rem;
+    min-height: 80rem;
+    margin: auto;
+    display: grid;
+    /* gap: 0.5rem; */
+    grid-auto-rows: repeat(3, minmax(30rem, auto));
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section";
+}
+
+header {
+    grid-area: header;
+    min-height: 20rem;
+    background-image: url("images/gymlady.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+h1 span {
+    color: white;
+    padding: 3rem;
+    font-size: 4rem;
+    letter-spacing: 1.4rem;
+    
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    padding-left: 1rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 1fr;
+    column-gap: 1rem;
+}
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.2rem;
+    padding-top: 4.2rem;
+    padding-right: 3rem;
+}
+.img-grid img {
+    max-width: 100%;
+    height: auto;
+    width: 35rem;
+    
+}
+section {
+    grid-area: section;
+    background-color: darkorchid;
+    /* min-height: 30rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section h3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.disco-heading {
+    display: flex;
+    justify-content: center;
+
+}
+.disco-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 15rem;
+    padding: 0.5rem;
+}
+.item {
+    text-align: center;
+    color: white;
+}
+
+
+
+    
