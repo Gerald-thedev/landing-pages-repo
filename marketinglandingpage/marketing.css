@@ -20,7 +20,7 @@ body {
     max-width: 60rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 22rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     grid-template-areas: 
     "header header"
     "leftside rightside";
@@ -178,7 +178,7 @@ h1 {
         max-width: 60rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 22rem;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         grid-template-areas: 
         "header header"
         "leftside rightside";
@@ -337,7 +337,7 @@ h1 {
         max-width: 40rem;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         grid-template-areas: 
         "header"
         "leftside" 
@@ -460,10 +460,12 @@ h1 {
         grid-area: rightside;
         background-color: rgba(252, 102, 75, 0.9);
         padding: 2rem;
+        display: flex;
+        justify-content: center;
     }
     
     .aside-rightside p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: bold;
     }
     .reg-t {
@@ -496,7 +498,7 @@ h1 {
         max-width: 40rem;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         grid-template-areas: 
         "header"
         "leftside" 
@@ -508,7 +510,6 @@ h1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        /* align-content: space-around; */
         width: 100%;
         background-image: linear-gradient(45deg, aqua, tomato);
         padding-top: 0.8rem;
@@ -519,6 +520,7 @@ h1 {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 0.5rem;
     }
     
     .logo {
@@ -542,9 +544,9 @@ h1 {
     
     h1 {
         display: inline;
-        padding-left: 0.5rem;
+        /* padding-left: 0.5rem; */
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
     .right-header {
@@ -571,12 +573,13 @@ h1 {
         background-color: rgba(25, 24, 24, 0.92); 
         padding-top: 0.5rem!important;
         padding-bottom: 1rem!important;
-        padding: 2rem;
+        display: flex;
+        justify-content: center;
         color: white;
-        text-align: center;
+        /* text-align: center; */
     }
     .main-leftside .skyblue {
-        margin-right: 0.5rem;
+        margin-left: -1rem;
     }
     
     .skyblue {
@@ -588,6 +591,10 @@ h1 {
     .skyblue:active {
         background-color: aqua;
     }
+
+    .transparent {
+        /* margin-left: 0.8rem; */
+    }
     
     .transparent:hover {
         background-color: rgba(246, 120, 98, 0.9);
@@ -597,11 +604,15 @@ h1 {
     }
     
     .main-leftside h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        /* margin-left: -2.2rem; */
     }
     .main-leftside p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* margin-left: -2.2rem; */
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
     
     .btn {
@@ -616,29 +627,35 @@ h1 {
     
     .skyblue {
         background-color: aqua;
+        margin-left: -2.2rem;
     }
     
     .aside-rightside {
         grid-area: rightside;
         background-color: rgba(252, 102, 75, 0.9);
         padding: 2rem;
+        display: flex;
+        justify-content: center;
     }
     
     .aside-rightside p {
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-weight: bold;
+        margin-top: -0.7rem;
     }
     .reg-t {
         color: white;
     }
     
     .aside-rightside input {
-        width: 18rem;
-        padding: 0.65rem;
+        width: 15rem;
+        padding: 0.3rem;
         margin-bottom: 0.4rem;
     }
     
     .reg {
         margin-top: 0.4rem;
+        margin-left: 0.2rem;
+
     }
 }
